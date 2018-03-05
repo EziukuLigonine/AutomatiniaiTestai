@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="8" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="11054" started-at="2018-03-05T21:49:43Z" finished-at="2018-03-05T21:49:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="11054" started-at="2018-03-05T21:49:43Z" finished-at="2018-03-05T21:49:54Z">
+      <class name="sps.requirement.fr1.Requirement_fr1">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:sps.requirement.fr1.Requirement_fr1@5ce81285]" name="setUp" is-config="true" duration-ms="7275" started-at="2018-03-05T23:49:43Z" finished-at="2018-03-05T23:49:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="login()[pri:1, instance:sps.requirement.fr1.Requirement_fr1@5ce81285]" name="login" duration-ms="618" started-at="2018-03-05T23:49:51Z" finished-at="2018-03-05T23:49:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="addUserAdministratorius(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.requirement.fr1.Requirement_fr1@5ce81285]" name="addUserAdministratorius" duration-ms="858" started-at="2018-03-05T23:49:51Z" data-provider="Admin" finished-at="2018-03-05T23:49:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Jonas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jonaitis]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jonaitisuser]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[PASSjonaitis]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserAdministratorius -->
+        <test-method status="PASS" signature="addUserAdministratorius(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.requirement.fr1.Requirement_fr1@5ce81285]" name="addUserAdministratorius" duration-ms="808" started-at="2018-03-05T23:49:52Z" data-provider="Admin" finished-at="2018-03-05T23:49:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Petras]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Petraitis]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[petrasuser]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[PASSpetraitis]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserAdministratorius -->
+        <test-method status="PASS" signature="addUserAdministratorius(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.requirement.fr1.Requirement_fr1@5ce81285]" name="addUserAdministratorius" duration-ms="653" started-at="2018-03-05T23:49:53Z" data-provider="Admin" finished-at="2018-03-05T23:49:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Juozas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Juozaitis]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[juozasuser]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[PASSjuozaitis]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserAdministratorius -->
+        <test-method status="PASS" signature="addUserAdministratorius(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.requirement.fr1.Requirement_fr1@5ce81285]" name="addUserAdministratorius" duration-ms="701" started-at="2018-03-05T23:49:54Z" data-provider="Admin" finished-at="2018-03-05T23:49:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lukas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lukauskas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[lukauskasuser]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[PASSlukauskas]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUserAdministratorius -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sps.requirement.fr1.Requirement_fr1@5ce81285]" name="closeBrowser" is-config="true" duration-ms="102" started-at="2018-03-05T23:49:54Z" finished-at="2018-03-05T23:49:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- sps.requirement.fr1.Requirement_fr1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

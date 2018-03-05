@@ -1,0 +1,4 @@
+Ignas;Juozaitis;ignjuozaitis;passignas;Camelia;
+Petras;Petrauskas;petrpetrausk;passpetras;Valerijonas;
+Jurgis;Jurgaitis;jurgisuser;jurgispass;HyperPharma;
+Rimas;Rimaitis;rimasrimaitis;rimaspasswd;Benu;
