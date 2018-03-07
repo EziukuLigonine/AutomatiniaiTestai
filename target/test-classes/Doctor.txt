@@ -1,4 +1,5 @@
-Ignas;Ignauskas;ignasdoctor;ignaspasswd;
-Justas;Justauskas;justasdoctor;justaspass;
-Povilas;Pavilauskas;povilasdoctor;povilpasswd;
-Darius;Dariauskas;dariusdoct;dariupass;
+Petras;Petraitis;Petras;Petraitis;5;
+Ignas;Ignauskas;ignasdoctor;ignaspasswd;4;
+Justas;Justauskas;justasdoctor;justaspass;3;
+Povilas;Pavilauskas;povilasdoctor;povilpasswd;15;
+Darius;Dariauskas;dariusdoct;dariupass;20;

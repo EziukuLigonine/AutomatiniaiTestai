@@ -1,129 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="8" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11054" started-at="2018-03-05T21:49:43Z" finished-at="2018-03-05T21:49:54Z">
+  <suite name="Default suite" duration-ms="13376" started-at="2018-03-07T02:03:38Z" finished-at="2018-03-07T02:03:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11054" started-at="2018-03-05T21:49:43Z" finished-at="2018-03-05T21:49:54Z">
-      <class name="sps.requirement.fr1.Requirement_fr1">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:sps.requirement.fr1.Requirement_fr1@5ce81285]" name="setUp" is-config="true" duration-ms="7275" started-at="2018-03-05T23:49:43Z" finished-at="2018-03-05T23:49:51Z">
+    <test name="Default test" duration-ms="13376" started-at="2018-03-07T02:03:38Z" finished-at="2018-03-07T02:03:51Z">
+      <class name="sps.auto.testai.fr3">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:sps.auto.testai.fr3@6a4f787b]" name="setUp" is-config="true" duration-ms="7285" started-at="2018-03-07T04:03:38Z" finished-at="2018-03-07T04:03:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login()[pri:1, instance:sps.requirement.fr1.Requirement_fr1@5ce81285]" name="login" duration-ms="618" started-at="2018-03-05T23:49:51Z" finished-at="2018-03-05T23:49:51Z">
+        <test-method status="PASS" signature="login()[pri:1, instance:sps.auto.testai.fr3@6a4f787b]" name="login" duration-ms="1002" started-at="2018-03-07T04:03:45Z" finished-at="2018-03-07T04:03:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="addUserAdministratorius(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.requirement.fr1.Requirement_fr1@5ce81285]" name="addUserAdministratorius" duration-ms="858" started-at="2018-03-05T23:49:51Z" data-provider="Admin" finished-at="2018-03-05T23:49:52Z">
+        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr3@6a4f787b]" name="addMedicalRecord" duration-ms="1264" started-at="2018-03-07T04:03:46Z" data-provider="MedicalRecord" finished-at="2018-03-07T04:03:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Jonas]]>
+                <![CDATA[38201017777]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Jonaitis]]>
+                <![CDATA[10 minučių]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[jonaitisuser]]>
+                <![CDATA[P53.14]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[PASSjonaitis]]>
+                <![CDATA[Taip]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addUserAdministratorius -->
-        <test-method status="PASS" signature="addUserAdministratorius(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.requirement.fr1.Requirement_fr1@5ce81285]" name="addUserAdministratorius" duration-ms="808" started-at="2018-03-05T23:49:52Z" data-provider="Admin" finished-at="2018-03-05T23:49:53Z">
-          <params>
-            <param index="0">
+            <param index="4">
               <value>
-                <![CDATA[Petras]]>
+                <![CDATA[Nekartotinas]]>
               </value>
             </param>
-            <param index="1">
+            <param index="5">
               <value>
                 <![CDATA[Petraitis]]>
               </value>
             </param>
-            <param index="2">
+            <param index="6">
               <value>
-                <![CDATA[petrasuser]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[PASSpetraitis]]>
+                <![CDATA[Sloga]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addUserAdministratorius -->
-        <test-method status="PASS" signature="addUserAdministratorius(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.requirement.fr1.Requirement_fr1@5ce81285]" name="addUserAdministratorius" duration-ms="653" started-at="2018-03-05T23:49:53Z" data-provider="Admin" finished-at="2018-03-05T23:49:54Z">
+        </test-method> <!-- addMedicalRecord -->
+        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr3@6a4f787b]" name="addMedicalRecord" duration-ms="1126" started-at="2018-03-07T04:03:47Z" data-provider="MedicalRecord" finished-at="2018-03-07T04:03:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Juozas]]>
+                <![CDATA[38112127414]]>
               </value>
             </param>
             <param index="1">
+              <value>
+                <![CDATA[20 minučių]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[M14.15]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Taip]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Nekartotinas]]>
+              </value>
+            </param>
+            <param index="5">
               <value>
                 <![CDATA[Juozaitis]]>
               </value>
             </param>
-            <param index="2">
+            <param index="6">
               <value>
-                <![CDATA[juozasuser]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[PASSjuozaitis]]>
+                <![CDATA[Galvos skausmas]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addUserAdministratorius -->
-        <test-method status="PASS" signature="addUserAdministratorius(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.requirement.fr1.Requirement_fr1@5ce81285]" name="addUserAdministratorius" duration-ms="701" started-at="2018-03-05T23:49:54Z" data-provider="Admin" finished-at="2018-03-05T23:49:54Z">
+        </test-method> <!-- addMedicalRecord -->
+        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr3@6a4f787b]" name="addMedicalRecord" duration-ms="1163" started-at="2018-03-07T04:03:48Z" data-provider="MedicalRecord" finished-at="2018-03-07T04:03:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Lukas]]>
+                <![CDATA[37508089988]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Lukauskas]]>
+                <![CDATA[30 minučių]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[lukauskasuser]]>
+                <![CDATA[C36.71]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[PASSlukauskas]]>
+                <![CDATA[Taip]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Nekartotinas]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Jonaitis]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Kaklo skausmas]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addUserAdministratorius -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sps.requirement.fr1.Requirement_fr1@5ce81285]" name="closeBrowser" is-config="true" duration-ms="102" started-at="2018-03-05T23:49:54Z" finished-at="2018-03-05T23:49:54Z">
+        </test-method> <!-- addMedicalRecord -->
+        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr3@6a4f787b]" name="addMedicalRecord" duration-ms="1048" started-at="2018-03-07T04:03:49Z" data-provider="MedicalRecord" finished-at="2018-03-07T04:03:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[46003037474]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[40 minučių]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[R77.47]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Taip]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Nekartotinas]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Juozaitis]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Kojos skausmas]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMedicalRecord -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sps.auto.testai.fr3@6a4f787b]" name="closeBrowser" is-config="true" duration-ms="442" started-at="2018-03-07T04:03:51Z" finished-at="2018-03-07T04:03:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- sps.requirement.fr1.Requirement_fr1 -->
+      </class> <!-- sps.auto.testai.fr3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

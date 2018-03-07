@@ -36,5 +36,13 @@ public class TestDataProviders {
 
 	}
 	
+	@DataProvider(name = "MedicalRecord")
+
+	public static Object[][] getDataMedicalRecord() {
+
+		return utils.TestDataFileReader.fillArrayWithDataFromFile(LinksToDataFiles.txtMedicalRecord);
+
+	}
+	
 	
 }
