@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13376" started-at="2018-03-07T02:03:38Z" finished-at="2018-03-07T02:03:51Z">
+  <suite name="Default suite" duration-ms="10134" started-at="2018-03-08T23:57:40Z" finished-at="2018-03-08T23:57:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13376" started-at="2018-03-07T02:03:38Z" finished-at="2018-03-07T02:03:51Z">
+    <test name="Default test" duration-ms="10134" started-at="2018-03-08T23:57:40Z" finished-at="2018-03-08T23:57:50Z">
       <class name="sps.auto.testai.fr3">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:sps.auto.testai.fr3@6a4f787b]" name="setUp" is-config="true" duration-ms="7285" started-at="2018-03-07T04:03:38Z" finished-at="2018-03-07T04:03:45Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:sps.auto.testai.fr3@48bb62]" name="setup" is-config="true" duration-ms="3777" started-at="2018-03-09T01:57:40Z" finished-at="2018-03-09T01:57:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login()[pri:1, instance:sps.auto.testai.fr3@6a4f787b]" name="login" duration-ms="1002" started-at="2018-03-07T04:03:45Z" finished-at="2018-03-07T04:03:46Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginAsDoctor()[pri:1, instance:sps.auto.testai.fr3@48bb62]" name="loginAsDoctor" duration-ms="890" started-at="2018-03-09T01:57:44Z" finished-at="2018-03-09T01:57:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr3@6a4f787b]" name="addMedicalRecord" duration-ms="1264" started-at="2018-03-07T04:03:46Z" data-provider="MedicalRecord" finished-at="2018-03-07T04:03:47Z">
+        </test-method> <!-- loginAsDoctor -->
+        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr3@48bb62]" name="addMedicalRecord" duration-ms="1430" started-at="2018-03-09T01:57:45Z" data-provider="MedicalRecord" finished-at="2018-03-09T01:57:46Z">
           <params>
             <param index="0">
               <value>
@@ -56,7 +56,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMedicalRecord -->
-        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr3@6a4f787b]" name="addMedicalRecord" duration-ms="1126" started-at="2018-03-07T04:03:47Z" data-provider="MedicalRecord" finished-at="2018-03-07T04:03:48Z">
+        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr3@48bb62]" name="addMedicalRecord" duration-ms="1346" started-at="2018-03-09T01:57:46Z" data-provider="MedicalRecord" finished-at="2018-03-09T01:57:48Z">
           <params>
             <param index="0">
               <value>
@@ -97,7 +97,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMedicalRecord -->
-        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr3@6a4f787b]" name="addMedicalRecord" duration-ms="1163" started-at="2018-03-07T04:03:48Z" data-provider="MedicalRecord" finished-at="2018-03-07T04:03:49Z">
+        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr3@48bb62]" name="addMedicalRecord" duration-ms="1101" started-at="2018-03-09T01:57:48Z" data-provider="MedicalRecord" finished-at="2018-03-09T01:57:49Z">
           <params>
             <param index="0">
               <value>
@@ -138,7 +138,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMedicalRecord -->
-        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr3@6a4f787b]" name="addMedicalRecord" duration-ms="1048" started-at="2018-03-07T04:03:49Z" data-provider="MedicalRecord" finished-at="2018-03-07T04:03:51Z">
+        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr3@48bb62]" name="addMedicalRecord" duration-ms="1103" started-at="2018-03-09T01:57:49Z" data-provider="MedicalRecord" finished-at="2018-03-09T01:57:50Z">
           <params>
             <param index="0">
               <value>
@@ -179,7 +179,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMedicalRecord -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sps.auto.testai.fr3@6a4f787b]" name="closeBrowser" is-config="true" duration-ms="442" started-at="2018-03-07T04:03:51Z" finished-at="2018-03-07T04:03:51Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sps.auto.testai.fr3@48bb62]" name="closeBrowser" is-config="true" duration-ms="444" started-at="2018-03-09T01:57:50Z" finished-at="2018-03-09T01:57:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

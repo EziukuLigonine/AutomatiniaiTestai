@@ -1,21 +1,21 @@
 package page;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePage extends AbstractPage {
-	public HomePage(WebDriver driver) {
-		super(driver);
-	}
-	
+public class HomePage{
+
 	@FindBy(linkText = ("Meniu"))
 	private WebElement linkMeniu;
 	
 	public  void clickLinkMeniu() {
 		linkMeniu.click();
 	}
-	
+
+	public WebElement getLinkMeniu() {
+		return linkMeniu;
+	}
+
 	@FindBy(linkText = ("Administratorius"))
 	private WebElement linkAdministratorius;
 	
@@ -54,7 +54,7 @@ public class HomePage extends AbstractPage {
 	@FindBy(linkText = ("Pacientų sąrašas"))
 	private WebElement linkPacientuSarasas;
 	
-	public  void clickLinkAdminSarasas() {
+	public  void clickLinkPacientuSarasas() {
 		linkPacientuSarasas.click();
 	}
 	
@@ -70,6 +70,13 @@ public class HomePage extends AbstractPage {
 	
 	public  void clickLinkVaistininkuSarasas() {
 		linkVaistininkuSarasas.click();
+	}
+	
+	@FindBy(linkText = ("Išrašyti ligos istoriją"))
+	private WebElement linkAddMedicalRecord;
+	
+	public  void clickAddMedicalRecord() {
+		linkAddMedicalRecord.click();
 	}
 	
 }

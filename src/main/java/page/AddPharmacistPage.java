@@ -1,14 +1,10 @@
 package page;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-public class AddPharmacistPage extends AbstractPage {
-	public AddPharmacistPage(WebDriver driver) {
-		super(driver);
-	}
+public class AddPharmacistPage {
 	
 	@FindBy(xpath = ("//button[@class='btn btn-success']"))
 	private WebElement buttonSave;
@@ -50,14 +46,9 @@ public class AddPharmacistPage extends AbstractPage {
 		inputPassword.sendKeys(value);
 	}
 	
-	public void enterCompanyType(String value) {
-		inputCompanyType.sendKeys(value);
-	}
-	
-	
-	public void selectCompanyType(){
+	public void selectCompanyType(String value){
 		Select typ = new Select(inputCompanyType);
-		typ.selectByIndex(3);
+		typ.selectByVisibleText(value);
 	}
 
 	public void enterCompanyName(String value) {

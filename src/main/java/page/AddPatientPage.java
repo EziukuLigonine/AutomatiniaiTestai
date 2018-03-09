@@ -1,14 +1,9 @@
 package page;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.Select;
 
-public class AddPatientPage extends AbstractPage {
-	public AddPatientPage(WebDriver driver) {
-		super(driver);
-	}
+public class AddPatientPage{
 	
 	@FindBy(xpath = ("//button[@class='btn btn-success']"))
 	private WebElement buttonSave;
@@ -57,15 +52,8 @@ public class AddPatientPage extends AbstractPage {
 		inputPersonalId.sendKeys(value);
 	}
 	
-	//variantas nr.1
-	public void enterBirthday(String value) {
+	public void enterBirthday(String value){
 		inputBirthday.sendKeys(value);
-	}
-	
-	//variantas nr.2
-	public void selectBirthday(){
-		Select dob = new Select(inputBirthday);
-		dob.getFirstSelectedOption();
 	}
 	
 	public void enterDoctorUsername(String value) {

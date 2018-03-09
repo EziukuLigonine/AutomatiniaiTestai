@@ -1,59 +1,67 @@
 package sps.auto.testai;
 
-import java.util.Random;
-import java.util.concurrent.TimeUnit;
-import java.util.function.Predicate;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import data.providers.TestDataProviders;
-import test.AbstractTest;
+import page.HomePage;
+import page.LoginPage;
+import page.MedicalRecord;
 
-public class fr3 extends AbstractTest {
+public class fr3 {
 
-	@Test(priority = 1)
-	public void login() {
+	protected static WebDriver driver = new FirefoxDriver();
+
+	@BeforeClass
+	public static void setup() {
+		driver.manage().window().maximize();
 		driver.get("http://localhost:8081");
-		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("Petras");
-		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Petraitis");
-		driver.findElement(By.xpath("//button[@class='btn btn-success']")).click();
-		driver.findElement(By.linkText("Meniu")).click();
-		driver.findElement(By.linkText("Išrašyti ligos istoriją")).click();
 	}
 
+	@AfterClass
+	public static void closeBrowser() {
+		driver.quit();
+	}
+
+	// Pagefactory
+	LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class);
+	HomePage homepage = PageFactory.initElements(driver, HomePage.class);
+	MedicalRecord medicalrecord = PageFactory.initElements(driver, MedicalRecord.class);
+
+	// Log in to system as Doctor
+	@Test(priority = 1)
+	public void loginAsDoctor() {
+		loginpage.enterVardas("Petras");
+		loginpage.enterPassword("Petraitis");
+		loginpage.clickLoginPirmyn();
+
+		new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(homepage.getLinkMeniu()));
+		
+		homepage.clickLinkMeniu();
+		homepage.clickAddMedicalRecord();
+	}
+
+	// Adding Medical record
 	@Test(priority = 2, dataProvider = "MedicalRecord", dataProviderClass = TestDataProviders.class, enabled = true)
-	public void addMedicalRecord(String AK, String minut ,String TLK, String VLK, String rep, String doctor, String visit)
-			throws InterruptedException {
+	public void addMedicalRecord(String AK, String minut, String TLK, String VLK, String rep, String doctor,
+			String visit) {
 
-		WebDriverWait wait = new WebDriverWait(driver, 3000);
+		medicalrecord.enterPersonalId(AK);
+		medicalrecord.selectDuration(minut);
+		medicalrecord.enterTlk(TLK);
+		medicalrecord.selectVlk(VLK);
+		medicalrecord.selectRepeat(rep);
+		medicalrecord.enterDoctorUsername(doctor);
+		medicalrecord.enterDescription(visit);
+		medicalrecord.clickButtonSave();
 
-		driver.findElement(By.id("personalId")).sendKeys(AK);
-
-		Select trukme = new Select(driver.findElement(By.id("duration")));
-		trukme.selectByVisibleText(minut);
-
-		driver.findElement(By.id("tlk")).sendKeys(TLK);
-
-		Select vlk = new Select(driver.findElement(By.id("vlk")));
-		vlk.selectByVisibleText(VLK);
-
-		Select repeat = new Select(driver.findElement(By.id("repeated")));
-		repeat.selectByVisibleText(rep);
-
-		driver.findElement(By.id("doctorUsername")).sendKeys(doctor);
-
-		driver.findElement(By.id("appDesc")).sendKeys(visit);
-
-		driver.findElement(By.xpath("//button[@class='btn btn-success']")).click();
-
-		wait.until(ExpectedConditions.alertIsPresent());
+		new WebDriverWait(driver, 2000).until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
 	}
 
