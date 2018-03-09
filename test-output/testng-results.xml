@@ -1,60 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7685" started-at="2018-03-09T09:12:45Z" finished-at="2018-03-09T09:12:52Z">
+  <suite name="Default suite" duration-ms="10033" started-at="2018-03-09T10:29:00Z" finished-at="2018-03-09T10:29:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7685" started-at="2018-03-09T09:12:45Z" finished-at="2018-03-09T09:12:52Z">
+    <test name="Default test" duration-ms="10033" started-at="2018-03-09T10:29:00Z" finished-at="2018-03-09T10:29:10Z">
       <class name="sps.auto.testai.fr4">
-        <test-method status="PASS" signature="setup()[pri:0, instance:sps.auto.testai.fr4@48bb62]" name="setup" is-config="true" duration-ms="3770" started-at="2018-03-09T11:12:45Z" finished-at="2018-03-09T11:12:48Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:sps.auto.testai.fr4@48bb62]" name="setup" is-config="true" duration-ms="4255" started-at="2018-03-09T12:29:00Z" finished-at="2018-03-09T12:29:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginAsDoctor()[pri:1, instance:sps.auto.testai.fr4@48bb62]" name="loginAsDoctor" duration-ms="714" started-at="2018-03-09T11:12:48Z" finished-at="2018-03-09T11:12:49Z">
+        <test-method status="PASS" signature="loginAsDoctor()[pri:1, instance:sps.auto.testai.fr4@48bb62]" name="loginAsDoctor" duration-ms="1938" started-at="2018-03-09T12:29:04Z" finished-at="2018-03-09T12:29:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsDoctor -->
-        <test-method status="FAIL" signature="addPrescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr4@48bb62]" name="addPrescription" duration-ms="2473" started-at="2018-03-09T11:12:49Z" data-provider="Prescription" finished-at="2018-03-09T11:12:51Z">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
-            <message>
-              <![CDATA[
-Data provider mismatch
-Method: addPrescription([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String)79004048877,(java.lang.String)Pertusinas,(java.lang.String)Miligramai,(java.lang.String)Vartoti ryte pries valgį,(java.lang.String)Petras,(java.lang.String)2018-09-09]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-Data provider mismatch
-Method: addPrescription([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.String)79004048877,(java.lang.String)Pertusinas,(java.lang.String)Miligramai,(java.lang.String)Vartoti ryte pries valgį,(java.lang.String)Petras,(java.lang.String)2018-09-09]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:49)
-	at org.testng.internal.Invoker.injectParameters(Invoker.java:1293)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1187)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addPrescription -->
-        <test-method status="PASS" signature="addPrescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr4@48bb62]" name="addPrescription" duration-ms="933" started-at="2018-03-09T11:12:49Z" data-provider="Prescription" finished-at="2018-03-09T11:12:50Z">
+        <test-method status="PASS" signature="addPrescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr4@48bb62]" name="addPrescription" duration-ms="1141" started-at="2018-03-09T12:29:06Z" data-provider="Prescription" finished-at="2018-03-09T12:29:07Z">
           <params>
             <param index="0">
               <value>
@@ -95,7 +56,7 @@ Arguments: [(java.lang.String)79004048877,(java.lang.String)Pertusinas,(java.lan
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPrescription -->
-        <test-method status="PASS" signature="addPrescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr4@48bb62]" name="addPrescription" duration-ms="736" started-at="2018-03-09T11:12:50Z" data-provider="Prescription" finished-at="2018-03-09T11:12:51Z">
+        <test-method status="PASS" signature="addPrescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr4@48bb62]" name="addPrescription" duration-ms="834" started-at="2018-03-09T12:29:07Z" data-provider="Prescription" finished-at="2018-03-09T12:29:08Z">
           <params>
             <param index="0">
               <value>
@@ -136,7 +97,7 @@ Arguments: [(java.lang.String)79004048877,(java.lang.String)Pertusinas,(java.lan
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPrescription -->
-        <test-method status="PASS" signature="addPrescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr4@48bb62]" name="addPrescription" duration-ms="787" started-at="2018-03-09T11:12:51Z" data-provider="Prescription" finished-at="2018-03-09T11:12:51Z">
+        <test-method status="PASS" signature="addPrescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr4@48bb62]" name="addPrescription" duration-ms="653" started-at="2018-03-09T12:29:08Z" data-provider="Prescription" finished-at="2018-03-09T12:29:09Z">
           <params>
             <param index="0">
               <value>
@@ -177,7 +138,48 @@ Arguments: [(java.lang.String)79004048877,(java.lang.String)Pertusinas,(java.lan
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addPrescription -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sps.auto.testai.fr4@48bb62]" name="closeBrowser" is-config="true" duration-ms="701" started-at="2018-03-09T11:12:51Z" finished-at="2018-03-09T11:12:52Z">
+        <test-method status="PASS" signature="addPrescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr4@48bb62]" name="addPrescription" duration-ms="658" started-at="2018-03-09T12:29:09Z" data-provider="Prescription" finished-at="2018-03-09T12:29:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[38007072222]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bronhexin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Miligramai]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Vartoti vakare po valgio]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Lukas]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2018-05-09]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPrescription -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sps.auto.testai.fr4@48bb62]" name="closeBrowser" is-config="true" duration-ms="508" started-at="2018-03-09T12:29:09Z" finished-at="2018-03-09T12:29:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
