@@ -1,0 +1,4 @@
+48201012255;Paracetamolis;3;Mikrogramai;Vartoti vakere;Petras;2019-01-01;
+37902027788;Citramonas;5;Mikrogramai;Vartoti prieš valgį;Juozas;2018-05-05;
+38106069999;Brontex;7;Miligramai;Vartoti vakare po valgio;Lukas;2018-09-09;
+79004048877;Pertusinas;Miligramai;Vartoti ryte pries valgį;Petras;2018-09-09;

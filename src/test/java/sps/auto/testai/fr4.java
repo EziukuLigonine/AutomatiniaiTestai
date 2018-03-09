@@ -10,11 +10,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import data.providers.TestDataProviders;
+import page.AddPrescription;
 import page.HomePage;
 import page.LoginPage;
-import page.AddMedicalRecord;
 
-public class fr3 {
+public class fr4 {
 
 	protected static WebDriver driver = new FirefoxDriver();
 
@@ -32,7 +32,7 @@ public class fr3 {
 	// Pagefactory
 	LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class);
 	HomePage homepage = PageFactory.initElements(driver, HomePage.class);
-	AddMedicalRecord medicalrecord = PageFactory.initElements(driver, AddMedicalRecord.class);
+	AddPrescription prescription = PageFactory.initElements(driver, AddPrescription.class);
 
 	// Log in to system as Doctor
 	@Test(priority = 1)
@@ -42,24 +42,24 @@ public class fr3 {
 		loginpage.clickLoginPirmyn();
 
 		new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(homepage.getLinkMeniu()));
-		
+
 		homepage.clickLinkMeniu();
-		homepage.clickAddMedicalRecord();
+		homepage.clickAddPrescription();
 	}
 
-	// Adding Medical record
-	@Test(priority = 2, dataProvider = "MedicalRecord", dataProviderClass = TestDataProviders.class, enabled = true)
-	public void addMedicalRecord(String AK, String minut, String TLK, String VLK, String rep, String doctor,
-			String visit) {
+	// Adding Prescription record
+	@Test(priority = 2, dataProvider = "Prescription", dataProviderClass = TestDataProviders.class, enabled = true)
+	public void addPrescription 
+(String AK, String activemat, String activematquant, String unitas, String descript, String doctorusr,String dateuntil) {
 
-		medicalrecord.enterPersonalId(AK);
-		medicalrecord.selectDuration(minut);
-		medicalrecord.enterTlk(TLK);
-		medicalrecord.selectVlk(VLK);
-		medicalrecord.selectRepeat(rep);
-		medicalrecord.enterDoctorUsername(doctor);
-		medicalrecord.enterDescription(visit);
-		medicalrecord.clickButtonSave();
+		prescription.enterPersonalId(AK);
+		prescription.enterActiveMat(activemat);
+		prescription.enterActiveMatQuant(activematquant);
+		prescription.selectUnit(unitas);
+		prescription.enterPrescriptionDesc(descript);
+		prescription.enterDoctorUsr(doctorusr);
+		prescription.enterInputValidUntil(dateuntil);
+		prescription.clickButtonSave();
 
 		new WebDriverWait(driver, 2000).until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();

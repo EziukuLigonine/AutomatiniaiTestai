@@ -79,4 +79,11 @@ public class HomePage{
 		linkAddMedicalRecord.click();
 	}
 	
+	@FindBy(linkText = ("Išrašyti Receptą"))
+	private WebElement linkAddPrescription;
+	
+	public  void clickAddPrescription() {
+		linkAddPrescription.click();
+	}
+	
 }

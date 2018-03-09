@@ -44,5 +44,13 @@ public class TestDataProviders {
 
 	}
 	
+	@DataProvider(name = "Prescription")
+
+	public static Object[][] getDataPrescription() {
+
+		return utils.TestDataFileReader.fillArrayWithDataFromFile(LinksToDataFiles.txtPrescription);
+
+	}
+	
 	
 }

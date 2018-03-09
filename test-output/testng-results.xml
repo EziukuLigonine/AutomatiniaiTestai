@@ -1,189 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10134" started-at="2018-03-08T23:57:40Z" finished-at="2018-03-08T23:57:50Z">
+  <suite name="Default suite" duration-ms="7685" started-at="2018-03-09T09:12:45Z" finished-at="2018-03-09T09:12:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10134" started-at="2018-03-08T23:57:40Z" finished-at="2018-03-08T23:57:50Z">
-      <class name="sps.auto.testai.fr3">
-        <test-method status="PASS" signature="setup()[pri:0, instance:sps.auto.testai.fr3@48bb62]" name="setup" is-config="true" duration-ms="3777" started-at="2018-03-09T01:57:40Z" finished-at="2018-03-09T01:57:44Z">
+    <test name="Default test" duration-ms="7685" started-at="2018-03-09T09:12:45Z" finished-at="2018-03-09T09:12:52Z">
+      <class name="sps.auto.testai.fr4">
+        <test-method status="PASS" signature="setup()[pri:0, instance:sps.auto.testai.fr4@48bb62]" name="setup" is-config="true" duration-ms="3770" started-at="2018-03-09T11:12:45Z" finished-at="2018-03-09T11:12:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginAsDoctor()[pri:1, instance:sps.auto.testai.fr3@48bb62]" name="loginAsDoctor" duration-ms="890" started-at="2018-03-09T01:57:44Z" finished-at="2018-03-09T01:57:45Z">
+        <test-method status="PASS" signature="loginAsDoctor()[pri:1, instance:sps.auto.testai.fr4@48bb62]" name="loginAsDoctor" duration-ms="714" started-at="2018-03-09T11:12:48Z" finished-at="2018-03-09T11:12:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsDoctor -->
-        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr3@48bb62]" name="addMedicalRecord" duration-ms="1430" started-at="2018-03-09T01:57:45Z" data-provider="MedicalRecord" finished-at="2018-03-09T01:57:46Z">
+        <test-method status="FAIL" signature="addPrescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr4@48bb62]" name="addPrescription" duration-ms="2473" started-at="2018-03-09T11:12:49Z" data-provider="Prescription" finished-at="2018-03-09T11:12:51Z">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+Data provider mismatch
+Method: addPrescription([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String)79004048877,(java.lang.String)Pertusinas,(java.lang.String)Miligramai,(java.lang.String)Vartoti ryte pries valgį,(java.lang.String)Petras,(java.lang.String)2018-09-09]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: addPrescription([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String)79004048877,(java.lang.String)Pertusinas,(java.lang.String)Miligramai,(java.lang.String)Vartoti ryte pries valgį,(java.lang.String)Petras,(java.lang.String)2018-09-09]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:49)
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1293)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1187)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPrescription -->
+        <test-method status="PASS" signature="addPrescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr4@48bb62]" name="addPrescription" duration-ms="933" started-at="2018-03-09T11:12:49Z" data-provider="Prescription" finished-at="2018-03-09T11:12:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[38201017777]]>
+                <![CDATA[48201012255]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[10 minučių]]>
+                <![CDATA[Paracetamolis]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[P53.14]]>
+                <![CDATA[3]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Taip]]>
+                <![CDATA[Mikrogramai]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Nekartotinas]]>
+                <![CDATA[Vartoti vakere]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[Petraitis]]>
+                <![CDATA[Petras]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[Sloga]]>
+                <![CDATA[2019-01-01]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addMedicalRecord -->
-        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr3@48bb62]" name="addMedicalRecord" duration-ms="1346" started-at="2018-03-09T01:57:46Z" data-provider="MedicalRecord" finished-at="2018-03-09T01:57:48Z">
+        </test-method> <!-- addPrescription -->
+        <test-method status="PASS" signature="addPrescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr4@48bb62]" name="addPrescription" duration-ms="736" started-at="2018-03-09T11:12:50Z" data-provider="Prescription" finished-at="2018-03-09T11:12:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[38112127414]]>
+                <![CDATA[37902027788]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[20 minučių]]>
+                <![CDATA[Citramonas]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[M14.15]]>
+                <![CDATA[5]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Taip]]>
+                <![CDATA[Mikrogramai]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Nekartotinas]]>
+                <![CDATA[Vartoti prieš valgį]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[Juozaitis]]>
+                <![CDATA[Juozas]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[Galvos skausmas]]>
+                <![CDATA[2018-05-05]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addMedicalRecord -->
-        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr3@48bb62]" name="addMedicalRecord" duration-ms="1101" started-at="2018-03-09T01:57:48Z" data-provider="MedicalRecord" finished-at="2018-03-09T01:57:49Z">
+        </test-method> <!-- addPrescription -->
+        <test-method status="PASS" signature="addPrescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr4@48bb62]" name="addPrescription" duration-ms="787" started-at="2018-03-09T11:12:51Z" data-provider="Prescription" finished-at="2018-03-09T11:12:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[37508089988]]>
+                <![CDATA[38106069999]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[30 minučių]]>
+                <![CDATA[Brontex]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[C36.71]]>
+                <![CDATA[7]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Taip]]>
+                <![CDATA[Miligramai]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Nekartotinas]]>
+                <![CDATA[Vartoti vakare po valgio]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[Jonaitis]]>
+                <![CDATA[Lukas]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[Kaklo skausmas]]>
+                <![CDATA[2018-09-09]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addMedicalRecord -->
-        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.fr3@48bb62]" name="addMedicalRecord" duration-ms="1103" started-at="2018-03-09T01:57:49Z" data-provider="MedicalRecord" finished-at="2018-03-09T01:57:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[46003037474]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[40 minučių]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[R77.47]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Taip]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Nekartotinas]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Juozaitis]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Kojos skausmas]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addMedicalRecord -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sps.auto.testai.fr3@48bb62]" name="closeBrowser" is-config="true" duration-ms="444" started-at="2018-03-09T01:57:50Z" finished-at="2018-03-09T01:57:50Z">
+        </test-method> <!-- addPrescription -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sps.auto.testai.fr4@48bb62]" name="closeBrowser" is-config="true" duration-ms="701" started-at="2018-03-09T11:12:51Z" finished-at="2018-03-09T11:12:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- sps.auto.testai.fr3 -->
+      </class> <!-- sps.auto.testai.fr4 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
