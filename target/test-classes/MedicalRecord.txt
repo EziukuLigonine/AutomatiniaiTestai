@@ -1,4 +1,4 @@
-38201017777;10 minučių;P53.14;Taip;Nekartotinas;Petraitis;Sloga;
-38112127414;20 minučių;M14.15;Taip;Nekartotinas;Juozaitis;Galvos skausmas;
-37508089988;30 minučių;C36.71;Taip;Nekartotinas;Jonaitis;Kaklo skausmas;
-46003037474;40 minučių;R77.47;Taip;Nekartotinas;Juozaitis;Kojos skausmas;
+10 minučių;M44-M77;Taip;Nekartotinas;Sloga;
+20 minučių;N77-N36;Taip;Nekartotinas;Galvos skausmas;
+10 minučių;M11-M22;Ne;Nekartotinas;Rankos skausmas;
+40 minučių;D25-D65;Taip;Kartotinas;Kojos skausmas;

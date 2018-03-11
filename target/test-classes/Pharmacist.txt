@@ -1,4 +1,4 @@
-Ignas;Juozaitis;ignjuozaitis;passignas;UAB;Camelia;
-Petras;Petrauskas;petrpetrausk;passpetras;MB;Valerijonas;
-Jurgis;Jurgaitis;jurgisuser;jurgispass;AB;HyperPharma;
-Rimas;Rimaitis;rimasrimaitis;rimaspasswd;UAB;Benu;
+Ignas;Juozaitis;pharmaignas;phaignas;UAB;Camelia;
+Petras;Petrauskas;pharmapetras;phapetras;MB;Valerijonas;
+Jurgis;Jurgaitis;pharmajusrgis;phajurgis;AB;HyperPharma;
+Rimas;Rimaitis;pharmarimas;pharimas;UAB;Benu;

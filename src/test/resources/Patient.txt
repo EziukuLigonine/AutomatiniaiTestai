@@ -1,4 +1,4 @@
-Petras;Petraitis;petraspetr;petrpassre;47901017777;1979-01-01;petraspetraitis;
-Juozas;Juozelis;patientjuozas;paswordjuozas;48002031234;1980-02-03;antanasantanaitis;
-Jurgis;Jurgaitis;jurgispatient;jurgispass;36512127532;1965-12-12;lukaslaukaitis;
-Rimas;Rimaitis;rimaspatient;rimaspasswd;49010104795;1990-10-10;jonasjonaitis;
+Petras;Petraitis;patientpetras;patpetras;37901017777;01/01/1979;
+Juozas;Juozelis;patientjuozas;patjuozas;38105051234;05/05/1981;
+Jurgis;Jurgaitis;patientjurgis;patjurgis;36512127532;12/12/1965;
+Rimas;Rimaitis;patientrimas;patrimas;39010104795;10/10/1990;

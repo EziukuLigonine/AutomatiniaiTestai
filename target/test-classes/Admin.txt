@@ -1,4 +1,4 @@
-Jonas;Jonaitis;jonaitisuser;PASSjonaitis;
-Petras;Petraitis;petrasuser;PASSpetraitis;
-Juozas;Juozaitis;juozasuser;PASSjuozaitis;
-Lukas;Lukauskas;lukauskasuser;PASSlukauskas;
+Jonas;Jonaitis;adminjonas;passjonas;
+Petras;Petraitis;adminpetras;passpetras;
+Juozas;Juozaitis;adminjuozas;passjuozas;
+Lukas;Lukauskas;adminlukas;passlukas;
