@@ -52,5 +52,12 @@ public class TestDataProviders {
 
 	}
 	
+	@DataProvider(name = "ChangePassword")
+
+	public static Object[][] getChangePassword() {
+
+		return utils.TestDataFileReader.fillArrayWithDataFromFile(LinksToDataFiles.txtChangePassword);
+
+	}
 	
 }

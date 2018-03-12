@@ -23,11 +23,22 @@ public class HomePage{
 		linkUserIcon.click();
 	}
 	
-	@FindBy(linkText = ("Keisti slaptažodį"))
+	public WebElement getUserIcon() {
+		return linkUserIcon;
+	}
+	
+	@FindBy(partialLinkText = ("Keisti slapta"))
 	private WebElement linkChangePassword;
 	
 	public  void clickChangePassword() {
 		linkChangePassword.click();
+	}
+	
+	@FindBy(linkText = ("Atsijungti"))
+	private WebElement linkAtsijungti;
+	
+	public  void clickAtsijungti() {
+		linkAtsijungti.click();
 	}
 
 	@FindBy(linkText = ("Administratorius"))
