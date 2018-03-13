@@ -1,5 +1,3 @@
 Petras;Petraitis;doctorpetras;docpetras;5;
-Ignas;Ignauskas;docotorignas;docignas;4;
-Justas;Justauskas;doctorjustas;docjustas;3;
-Povilas;Pavilauskas;doctorpovilas;docpovilas;15;
-Darius;Dariauskas;doctordarius;docdarius;20;
+Jonas;Jonaitis;doctorjonas;docjonas;6
+Ignas;Ignauskas;doctorignas;docignas;4

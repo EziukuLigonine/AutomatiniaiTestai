@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="sps.auto.testai.fr1">
+      <class name="sps.auto.testai.FR_13">
         <methods>
           <include name="setup"/>
-          <include name="addUserPacientas" invocation-numbers="0 1 2 3"/>
+          <include name="changePassword" invocation-numbers="0 1"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- sps.auto.testai.fr1 -->
+      </class> <!-- sps.auto.testai.FR_13 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

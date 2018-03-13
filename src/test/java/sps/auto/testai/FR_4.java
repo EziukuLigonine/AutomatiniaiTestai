@@ -17,6 +17,12 @@ import doctor.can.add.AddPrescription;
 import home.and.login.HomePage;
 import home.and.login.LoginPage;
 
+/**
+* This class contains tests that cover requirement FR4.
+* @author  TurboEziukai
+* @since   2018-03-13
+*/
+
 public class FR_4 {
 
 	protected static WebDriver driver = new ChromeDriver();
@@ -40,6 +46,13 @@ public class FR_4 {
 	AllPatientsLinks allpatienslinks = PageFactory.initElements(driver, AllPatientsLinks.class);
 
 	// Log in to system as Doctor
+	
+	/**
+	 * Log in to system as Doctor.
+	 * @Result Doctor user will log in to the system and the main page is shown.
+	 */
+	
+	
 	@Test(priority = 1)
 	public void loginAsDoctor() {
 		loginpage.enterVardas("doctorpetras");
@@ -50,6 +63,12 @@ public class FR_4 {
 	}
 
 	// Adding Prescription record
+	
+	/**
+	 * Doctor user adds new prescription  to the system
+	 * @Result A new prescription is added and shown in "Mano receptai"
+	 */
+	
 	@Test(priority = 2, dataProvider = "Prescription", dataProviderClass = TestDataProviders.class, enabled = true)
 	public void addPrescription 
 (String activemat, String activematquant, String unitas, String descript, String dateuntil) {

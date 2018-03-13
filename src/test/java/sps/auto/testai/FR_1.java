@@ -21,9 +21,14 @@ import data.providers.TestDataProviders;
 import home.and.login.HomePage;
 import home.and.login.LoginPage;
 import main.page.viewlists.ViewPatientList;
+/**
+* This class contains tests that cover requirement FR1
+* @author  TurboEziukai
+* @since   2018-03-13
+*/
 
 public class FR_1 {
-
+	
 	protected static WebDriver driver = new ChromeDriver();
 
 	@BeforeClass
@@ -50,6 +55,13 @@ public class FR_1 {
 	AssignDoctorList assigndoctorlist = PageFactory.initElements(driver, AssignDoctorList.class);
 
 	// Log in to system as Admin
+	
+	/**
+	 * Log in to system as Admin.
+	 * Admin user is created and stored in database before running this test
+	 * @Result Admin user will log in to the system and the main page is shown.
+	 */
+	
 	@Test(priority = 1)
 	public void loginAsAdmin() {
 		loginpage.enterVardas("Adminas");
@@ -61,6 +73,12 @@ public class FR_1 {
 	}
 
 	// Adding Admin users
+	
+	/**
+	 * Admin user adds other Admins users to the system
+	 * @Result Users are created by Admin user (pre-built)
+	 */
+	
 	@Test(priority = 2, dataProvider = "Admin", dataProviderClass = TestDataProviders.class, enabled = true)
 	public void addUserAdministratorius(String name, String surname, String username, String password) {
 
@@ -78,6 +96,12 @@ public class FR_1 {
 	}
 
 	// Adding Doctor user
+	
+	/**
+	 * Admin user adds Doctor users to the system
+	 * @Result Users are created by Admin user (pre-built)
+	 */
+	
 	@Test(priority = 3, dataProvider = "Doctor", dataProviderClass = TestDataProviders.class, enabled = true)
 	public void addUserGydytojas(String name, String surname, String username, String password, String spec) {
 
@@ -96,6 +120,12 @@ public class FR_1 {
 	}
 
 	// Adding Patient user
+	
+	/**
+	 * Admin user adds Patient users to the system
+	 * @Result Users are created by Admin user (pre-built)
+	 */
+	
 	@Test(priority = 4, dataProvider = "Patient", dataProviderClass = TestDataProviders.class, enabled = true)
 	public void addUserPacientas(String name, String surname, String username, String password, String AK, String DoB) 
 			throws InterruptedException {
@@ -118,6 +148,12 @@ public class FR_1 {
 	}
 
 	// Adding Pharmacist user
+	
+	/**
+	 * Admin user adds Pharmacist users to the system
+	 * @Result Users are created by Admin user (pre-built)
+	 */
+	
 	@Test(priority = 5, dataProvider = "Pharmacist", dataProviderClass = TestDataProviders.class, enabled = true)
 	public void addUserVaistininkas(String name, String surname, String username, String password, String typ,
 			String company) {
@@ -138,6 +174,12 @@ public class FR_1 {
 	}
 
 	// Admin can assign patient to the doctor
+	
+	/**
+	 * Admin assigns Patient user to doctor
+	 * @Result Patient user is assigned by Admin user (pre-built)
+	 */
+	
 	@Test(priority = 6, enabled = true)
 	public void AssigningPatientToDoctor() {
 

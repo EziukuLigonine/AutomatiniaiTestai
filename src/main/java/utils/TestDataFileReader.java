@@ -3,7 +3,6 @@ package utils;
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
@@ -45,7 +44,7 @@ public class TestDataFileReader {
 		return lines.toArray(array);
 	}
 	
-	
+	/*
 	// KITAS METODAS DUOMENIMS
 	private static List<String> getTestData(String fileName) throws IOException {
 	    List<String> records = new ArrayList<String>();
@@ -61,5 +60,5 @@ public class TestDataFileReader {
         return records;
 	}
 	// KITAS METODAS DUOMENIMS END	
-
+*/
 }

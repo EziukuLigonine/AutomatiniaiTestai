@@ -32,6 +32,17 @@ public class AddPatientPage{
 	@FindBy(id = ("doctorUsername"))
 	private WebElement inputDoctorUsername;
 	
+	
+	public void clearFields() {
+		inputName.clear();
+		inputSurname.clear();
+		inputUsername.clear();
+		inputPassword.clear();
+		inputPersonalId.clear();
+		inputBirthday.clear();
+		
+	}
+	
 	public void enterName(String value) {
 		inputName.sendKeys(value);
 	}

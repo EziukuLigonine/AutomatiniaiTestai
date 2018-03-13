@@ -1,4 +1,2 @@
 Jonas;Jonaitis;adminjonas;passjonas;
 Petras;Petraitis;adminpetras;passpetras;
-Juozas;Juozaitis;adminjuozas;passjuozas;
-Lukas;Lukauskas;adminlukas;passlukas;

@@ -26,6 +26,14 @@ public class AddDoctorPage {
 
 	@FindBy(id = ("specialisation"))
 	private WebElement inputSpecialisation;
+	
+	
+	public void clearFields() {
+		inputName.clear();
+		inputSurname.clear();
+		inputUsername.clear();
+		inputPassword.clear();
+	}
 
 	public void enterName(String value) {
 		inputName.sendKeys(value);

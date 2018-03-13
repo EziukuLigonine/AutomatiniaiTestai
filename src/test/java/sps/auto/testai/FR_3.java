@@ -1,7 +1,6 @@
 package sps.auto.testai;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -16,6 +15,12 @@ import doctor.all.patients.AllPatientsLinks;
 import doctor.can.add.AddMedicalRecord;
 import home.and.login.HomePage;
 import home.and.login.LoginPage;
+
+/**
+* This class contains tests that cover requirement FR3.
+* @author  TurboEziukai
+* @since   2018-03-13
+*/
 
 public class FR_3 {
 
@@ -40,8 +45,16 @@ public class FR_3 {
 	AllPatientsLinks allpatienslinks = PageFactory.initElements(driver, AllPatientsLinks.class);
 
 	// Log in to system as Doctor
+	
+	
+	/**
+	 * Log in to system as Doctor.
+	 * @Result Doctor user will log in to the system and the main page is shown.
+	 */
+	
 	@Test(priority = 1)
 	public void loginAsDoctor() {
+		
 		loginpage.enterVardas("doctorpetras");
 		loginpage.enterPassword("docpetras");
 		loginpage.clickLoginPirmyn();
@@ -50,6 +63,13 @@ public class FR_3 {
 	}
 
 	// Adding Medical record
+	
+	
+	/**
+	 * Doctor user adds new medical record to the system
+	 * @Result A new medical record is added and shown in "Mano irasai"
+	 */
+	
 	@Test(priority = 2, dataProvider = "MedicalRecord", dataProviderClass = TestDataProviders.class, enabled = true)
 	public void addMedicalRecord(String minut, String TLK, String VLK, String rep, String visit) {
 		

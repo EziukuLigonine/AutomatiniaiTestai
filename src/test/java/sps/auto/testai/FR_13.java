@@ -16,6 +16,12 @@ import home.and.login.ChangePassPage;
 import home.and.login.HomePage;
 import home.and.login.LoginPage;
 
+/**
+* This class contains tests that cover requirement FR13.
+* @author  TurboEziukai
+* @since   2018-03-13
+*/
+
 public class FR_13 {
 
 	protected static WebDriver driver = new ChromeDriver();
@@ -40,6 +46,11 @@ public class FR_13 {
 
 	// Changing password
 	
+	/**
+	 * Users can change their passwords by themselves
+	 * @Result Users log in to the system, change their passwords and then log out
+	 */
+	
 	@Test(priority = 1, dataProvider = "ChangePassword", dataProviderClass = TestDataProviders.class, enabled = true)
 	public void changePassword(String username, String currentPassword, String newPassword) 
 			throws InterruptedException {
@@ -48,12 +59,13 @@ public class FR_13 {
 		loginpage.enterPassword(currentPassword);
 		loginpage.clickLoginPirmyn();
 
-		Thread.sleep(1000);
+		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(homepage.getLinkMeniu()));
 		homepage.clickUserIcon();
-		Thread.sleep(1000);
+		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(homepage.getLinkMeniu()));
 		homepage.clickChangePassword();
-		
+
 		changepass.clearAllFields();
+		
 		changepass.enterCurrentPass(currentPassword);
 		changepass.enterNewPass(newPassword);
 		changepass.enterRepeatPass(newPassword);
@@ -64,6 +76,7 @@ public class FR_13 {
 		
 		homepage.clickUserIcon();
 		homepage.clickAtsijungti();
+	
 	}
 
 }

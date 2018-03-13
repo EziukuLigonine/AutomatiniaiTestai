@@ -30,6 +30,15 @@ public class AddPharmacistPage {
 	@FindBy(id = ("companyName"))
 	private WebElement inputCompanyName;
 	
+	
+	public void clearFields() {
+		inputName.clear();
+		inputSurname.click();
+		inputUsername.click();
+		inputPassword.click();
+		inputCompanyName.clear();
+	}
+	
 	public void enterName(String value) {
 		inputName.sendKeys(value);
 	}

@@ -34,6 +34,10 @@ public class HomePage{
 		linkChangePassword.click();
 	}
 	
+	public WebElement getPasswordLink() {
+		return linkChangePassword;
+	}
+	
 	@FindBy(linkText = ("Atsijungti"))
 	private WebElement linkAtsijungti;
 	

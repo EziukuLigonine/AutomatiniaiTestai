@@ -1,4 +1,2 @@
 Paracetamolis;3;Mikrogramai;Vartoti vakere;01/01/2019;
 Citramonas;5;Mikrogramai;Vartoti prieš valgį;08/08/2018;
-Brontex;7;Miligramai;Vartoti vakare po valgio;10/10/2018;
-Bronhexin;4;Miligramai;Vartoti vakare po valgio;04/04/2018;

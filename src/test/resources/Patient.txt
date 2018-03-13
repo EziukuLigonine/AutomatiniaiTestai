@@ -1,4 +1,2 @@
 Petras;Petraitis;patientpetras;patpetras;37901017777;01/01/1979;
 Juozas;Juozelis;patientjuozas;patjuozas;38105051234;05/05/1981;
-Jurgis;Jurgaitis;patientjurgis;patjurgis;36512127532;12/12/1965;
-Rimas;Rimaitis;patientrimas;patrimas;39010104795;10/10/1990;

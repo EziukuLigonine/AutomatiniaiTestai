@@ -1,4 +1,2 @@
 10 minučių;M44-M77;Taip;Nekartotinas;Sloga;
 20 minučių;N77-N36;Taip;Nekartotinas;Galvos skausmas;
-10 minučių;M11-M22;Ne;Nekartotinas;Rankos skausmas;
-40 minučių;D25-D65;Taip;Kartotinas;Kojos skausmas;

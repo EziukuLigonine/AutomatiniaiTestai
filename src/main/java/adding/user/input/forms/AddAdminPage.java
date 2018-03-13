@@ -22,6 +22,13 @@ public class AddAdminPage{
 
 	@FindBy(id = ("password"))
 	private WebElement inputPassword;
+	
+	public void clearFields() {
+		inputName.clear();
+		inputSurname.clear();
+		inputUsername.clear();
+		inputPassword.clear();
+	}
 
 	public void enterName(String value) {
 		inputName.sendKeys(value);
