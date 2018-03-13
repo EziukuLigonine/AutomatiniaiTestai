@@ -1,13 +1,14 @@
 package sps.auto.testai;
 
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import data.providers.TestDataProviders;
@@ -26,14 +27,14 @@ public class FR_3 {
 
 	protected static WebDriver driver = new ChromeDriver();
 
-	@BeforeClass
+	@BeforeSuite
 	public static void setup() {
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 		driver.get("http://localhost:8081");
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	}
 
-	@AfterClass
+	@AfterSuite
 	public static void closeBrowser() {
 		driver.quit();
 	}
@@ -52,14 +53,16 @@ public class FR_3 {
 	 * @Result Doctor user will log in to the system and the main page is shown.
 	 */
 	
-	@Test(priority = 1)
+	@Test(priority = 7)
 	public void loginAsDoctor() {
+		
+		new WebDriverWait(driver, 2).until(ExpectedConditions.visibilityOf(loginpage.getVardas()));
 		
 		loginpage.enterVardas("doctorpetras");
 		loginpage.enterPassword("docpetras");
 		loginpage.clickLoginPirmyn();
 
-		new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(homepage.getLinkMeniu()));
+		new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(homepage.getLinkMeniu()));
 	}
 
 	// Adding Medical record
@@ -70,7 +73,7 @@ public class FR_3 {
 	 * @Result A new medical record is added and shown in "Mano irasai"
 	 */
 	
-	@Test(priority = 2, dataProvider = "MedicalRecord", dataProviderClass = TestDataProviders.class, enabled = true)
+	@Test(priority = 8, dataProvider = "MedicalRecord", dataProviderClass = TestDataProviders.class, enabled = true)
 	public void addMedicalRecord(String minut, String TLK, String VLK, String rep, String visit) {
 		
 		homepage.clickLinkMeniu();

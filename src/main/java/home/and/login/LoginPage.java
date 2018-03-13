@@ -11,6 +11,10 @@ public class LoginPage {
 	public void enterVardas(String value) {
 		loginVardas.sendKeys(value);
 	}
+	
+	public WebElement getVardas() {
+		return loginVardas;
+	}
 
 	@FindBy(xpath = ("//input[@type='password']"))
 	private WebElement loginPassword;

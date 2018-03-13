@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG suite]">
-  <test name="Smoking(failed)">
+  <test name="Regression(failed)">
     <classes>
       <class name="sps.auto.testai.FR_3">
         <methods>
           <include name="setup"/>
           <include name="loginAsDoctor"/>
           <include name="closeBrowser"/>
-          <include name="addMedicalRecord" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- sps.auto.testai.FR_3 -->
+      <class name="sps.auto.testai.FR_4">
+        <methods>
+          <include name="loginAsDoctor"/>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- sps.auto.testai.FR_4 -->
     </classes>
-  </test> <!-- Smoking(failed) -->
+  </test> <!-- Regression(failed) -->
 </suite> <!-- Failed suite [TestNG suite] -->

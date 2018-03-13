@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="TestNG suite">
-	<test name="Smoking" preserve-order="true" parallel="false">
+	<test name="Smoking">
 		<classes>
 			<class name="sps.auto.testai.FR_1" />
 			<class name="sps.auto.testai.FR_3" />
@@ -10,7 +10,7 @@
 			<class name="sps.auto.testai.FR_13" />
 		</classes>
 	</test>
-		<test name="Regression" preserve-order="true" parallel="false">
+	<test name="Regression">
 		<classes>
 			<class name="sps.auto.testai.FR_3" />
 			<class name="sps.auto.testai.FR_4" />

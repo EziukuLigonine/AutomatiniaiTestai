@@ -7,8 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import data.providers.TestDataProviders;
@@ -26,14 +26,14 @@ public class FR_13 {
 
 	protected static WebDriver driver = new ChromeDriver();
 
-	@BeforeClass
+	@BeforeSuite
 	public static void setup() {
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 		driver.get("http://localhost:8081");
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	}
 
-	@AfterClass
+	@AfterSuite
 	public static void closeBrowser() {
 		driver.quit();
 	}
@@ -51,7 +51,7 @@ public class FR_13 {
 	 * @Result Users log in to the system, change their passwords and then log out
 	 */
 	
-	@Test(priority = 1, dataProvider = "ChangePassword", dataProviderClass = TestDataProviders.class, enabled = true)
+	@Test(priority = 11, dataProvider = "ChangePassword", dataProviderClass = TestDataProviders.class, enabled = true)
 	public void changePassword(String username, String currentPassword, String newPassword) 
 			throws InterruptedException {
 		
@@ -77,6 +77,11 @@ public class FR_13 {
 		homepage.clickUserIcon();
 		homepage.clickAtsijungti();
 	
+	}
+	
+	@Test(priority = 12)
+	public void CloseDriver() {
+		driver.quit();
 	}
 
 }

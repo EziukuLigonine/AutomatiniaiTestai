@@ -3,13 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="sps.auto.testai.FR_13">
+      <class name="sps.auto.testai.FR_1">
         <methods>
+          <include name="setUp"/>
+          <include name="addUserGydytojas"/>
+          <include name="addUserVaistininkas"/>
           <include name="setup"/>
-          <include name="changePassword" invocation-numbers="0 1"/>
+          <include name="loginAsAdmin"/>
           <include name="closeBrowser"/>
+          <include name="addUserAdministratorius"/>
+          <include name="addUserPacientas"/>
+          <include name="AssigningPatientToDoctor"/>
         </methods>
-      </class> <!-- sps.auto.testai.FR_13 -->
+      </class> <!-- sps.auto.testai.FR_1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

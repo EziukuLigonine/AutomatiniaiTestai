@@ -1,66 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="14" passed="11">
+<testng-results skipped="0" failed="2" ignored="0" total="26" passed="24">
   <reporter-output>
   </reporter-output>
-  <suite name="TestNG suite" duration-ms="18861" started-at="2018-03-13T13:29:10Z" finished-at="2018-03-13T13:29:28Z">
+  <suite name="TestNG suite" duration-ms="47484" started-at="2018-03-13T20:20:13Z" finished-at="2018-03-13T20:21:00Z">
     <groups>
     </groups>
-    <test name="Smoking" duration-ms="18861" started-at="2018-03-13T13:29:10Z" finished-at="2018-03-13T13:29:28Z">
-      <class name="sps.auto.testai.FR_3">
-        <test-method status="PASS" signature="setup()[pri:0, instance:sps.auto.testai.FR_3@33bc72d1]" name="setup" is-config="true" duration-ms="1522" started-at="2018-03-13T15:29:12Z" finished-at="2018-03-13T15:29:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="loginAsDoctor()[pri:1, instance:sps.auto.testai.FR_3@33bc72d1]" name="loginAsDoctor" duration-ms="480" started-at="2018-03-13T15:29:14Z" finished-at="2018-03-13T15:29:14Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:672)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:668)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	at sps.auto.testai.FR_3.loginAsDoctor(FR_3.java:50)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+    <test name="Smoking" duration-ms="26793" started-at="2018-03-13T20:20:13Z" finished-at="2018-03-13T20:20:39Z">
+      <class name="sps.auto.testai.FR_4">
+        <test-method status="PASS" signature="loginAsDoctor()[pri:9, instance:sps.auto.testai.FR_4@57a78e3]" name="loginAsDoctor" duration-ms="523" started-at="2018-03-13T22:20:31Z" finished-at="2018-03-13T22:20:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsDoctor -->
-        <test-method status="FAIL" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.FR_3@33bc72d1]" name="addMedicalRecord" duration-ms="10" started-at="2018-03-13T15:29:16Z" data-provider="MedicalRecord" finished-at="2018-03-13T15:29:16Z">
+        <test-method status="PASS" signature="addPrescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:sps.auto.testai.FR_4@57a78e3]" name="addPrescription" duration-ms="1715" started-at="2018-03-13T22:20:31Z" data-provider="Prescription" finished-at="2018-03-13T22:20:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Paracetamolis]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mikrogramai]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Vartoti vakere]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[01/01/2019]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPrescription -->
+        <test-method status="PASS" signature="addPrescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:sps.auto.testai.FR_4@57a78e3]" name="addPrescription" duration-ms="1805" started-at="2018-03-13T22:20:33Z" data-provider="Prescription" finished-at="2018-03-13T22:20:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Citramonas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mikrogramai]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Vartoti prieš valgį]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[08/08/2018]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPrescription -->
+      </class> <!-- sps.auto.testai.FR_4 -->
+      <class name="sps.auto.testai.FR_3">
+        <test-method status="PASS" signature="loginAsDoctor()[pri:7, instance:sps.auto.testai.FR_3@4681c175]" name="loginAsDoctor" duration-ms="691" started-at="2018-03-13T22:20:27Z" finished-at="2018-03-13T22:20:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsDoctor -->
+        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:sps.auto.testai.FR_3@4681c175]" name="addMedicalRecord" duration-ms="1778" started-at="2018-03-13T22:20:27Z" data-provider="MedicalRecord" finished-at="2018-03-13T22:20:29Z">
           <params>
             <param index="0">
               <value>
@@ -88,83 +107,10 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : Tokio vartotojo nera}
-  (Session info: chrome=64.0.3282.186)
-  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds: null
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MARGO-THINK', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\Margo\AppData\Local\Temp\scoped_dir3196_25249}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=64.0.3282.186, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 6840beb1aa31d4d8c18e5aae48620b33
-*** Element info: {Using=link text, value=Meniu}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Tokio vartotojo nera}
-  (Session info: chrome=64.0.3282.186)
-  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds: null
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MARGO-THINK', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\Margo\AppData\Local\Temp\scoped_dir3196_25249}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=64.0.3282.186, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 6840beb1aa31d4d8c18e5aae48620b33
-*** Element info: {Using=link text, value=Meniu}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:172)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:410)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at home.and.login.HomePage.clickLinkMeniu(HomePage.java:12)
-	at sps.auto.testai.FR_3.addMedicalRecord(FR_3.java:57)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMedicalRecord -->
-        <test-method status="FAIL" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.FR_3@33bc72d1]" name="addMedicalRecord" duration-ms="8" started-at="2018-03-13T15:29:16Z" data-provider="MedicalRecord" finished-at="2018-03-13T15:29:16Z">
+        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:sps.auto.testai.FR_3@4681c175]" name="addMedicalRecord" duration-ms="1549" started-at="2018-03-13T22:20:29Z" data-provider="MedicalRecord" finished-at="2018-03-13T22:20:31Z">
           <params>
             <param index="0">
               <value>
@@ -192,97 +138,16 @@ Session ID: 6840beb1aa31d4d8c18e5aae48620b33
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : Tokio vartotojo nera}
-  (Session info: chrome=64.0.3282.186)
-  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds: null
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MARGO-THINK', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\Margo\AppData\Local\Temp\scoped_dir3196_25249}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=64.0.3282.186, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 6840beb1aa31d4d8c18e5aae48620b33
-*** Element info: {Using=link text, value=Meniu}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Tokio vartotojo nera}
-  (Session info: chrome=64.0.3282.186)
-  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds: null
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'MARGO-THINK', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\Margo\AppData\Local\Temp\scoped_dir3196_25249}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=64.0.3282.186, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 6840beb1aa31d4d8c18e5aae48620b33
-*** Element info: {Using=link text, value=Meniu}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:172)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:410)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at home.and.login.HomePage.clickLinkMeniu(HomePage.java:12)
-	at sps.auto.testai.FR_3.addMedicalRecord(FR_3.java:57)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addMedicalRecord -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sps.auto.testai.FR_3@33bc72d1]" name="closeBrowser" is-config="true" duration-ms="761" started-at="2018-03-13T15:29:16Z" finished-at="2018-03-13T15:29:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
       </class> <!-- sps.auto.testai.FR_3 -->
       <class name="sps.auto.testai.FR_1">
-        <test-method status="PASS" signature="setup()[pri:0, instance:sps.auto.testai.FR_1@273444fe]" name="setup" is-config="true" duration-ms="1667" started-at="2018-03-13T15:29:10Z" finished-at="2018-03-13T15:29:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginAsAdmin()[pri:1, instance:sps.auto.testai.FR_1@273444fe]" name="loginAsAdmin" duration-ms="784" started-at="2018-03-13T15:29:11Z" finished-at="2018-03-13T15:29:12Z">
+        <test-method status="PASS" signature="loginAsAdmin()[pri:1, instance:sps.auto.testai.FR_1@353352b6]" name="loginAsAdmin" duration-ms="1262" started-at="2018-03-13T22:20:13Z" finished-at="2018-03-13T22:20:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsAdmin -->
-        <test-method status="PASS" signature="addUserAdministratorius(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.FR_1@273444fe]" name="addUserAdministratorius" duration-ms="1228" started-at="2018-03-13T15:29:14Z" data-provider="Admin" finished-at="2018-03-13T15:29:15Z">
+        <test-method status="PASS" signature="addUserAdministratorius(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.FR_1@353352b6]" name="addUserAdministratorius" duration-ms="1272" started-at="2018-03-13T22:20:14Z" data-provider="Admin" finished-at="2018-03-13T22:20:15Z">
           <params>
             <param index="0">
               <value>
@@ -308,7 +173,7 @@ Session ID: 6840beb1aa31d4d8c18e5aae48620b33
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUserAdministratorius -->
-        <test-method status="PASS" signature="addUserAdministratorius(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.FR_1@273444fe]" name="addUserAdministratorius" duration-ms="1085" started-at="2018-03-13T15:29:15Z" data-provider="Admin" finished-at="2018-03-13T15:29:16Z">
+        <test-method status="PASS" signature="addUserAdministratorius(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:sps.auto.testai.FR_1@353352b6]" name="addUserAdministratorius" duration-ms="1206" started-at="2018-03-13T22:20:15Z" data-provider="Admin" finished-at="2018-03-13T22:20:16Z">
           <params>
             <param index="0">
               <value>
@@ -334,7 +199,7 @@ Session ID: 6840beb1aa31d4d8c18e5aae48620b33
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUserAdministratorius -->
-        <test-method status="PASS" signature="addUserGydytojas(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:sps.auto.testai.FR_1@273444fe]" name="addUserGydytojas" duration-ms="1403" started-at="2018-03-13T15:29:17Z" data-provider="Doctor" finished-at="2018-03-13T15:29:19Z">
+        <test-method status="PASS" signature="addUserGydytojas(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:sps.auto.testai.FR_1@353352b6]" name="addUserGydytojas" duration-ms="1498" started-at="2018-03-13T22:20:16Z" data-provider="Doctor" finished-at="2018-03-13T22:20:18Z">
           <params>
             <param index="0">
               <value>
@@ -365,7 +230,7 @@ Session ID: 6840beb1aa31d4d8c18e5aae48620b33
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUserGydytojas -->
-        <test-method status="PASS" signature="addUserGydytojas(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:sps.auto.testai.FR_1@273444fe]" name="addUserGydytojas" duration-ms="1338" started-at="2018-03-13T15:29:19Z" data-provider="Doctor" finished-at="2018-03-13T15:29:20Z">
+        <test-method status="PASS" signature="addUserGydytojas(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:sps.auto.testai.FR_1@353352b6]" name="addUserGydytojas" duration-ms="1436" started-at="2018-03-13T22:20:18Z" data-provider="Doctor" finished-at="2018-03-13T22:20:19Z">
           <params>
             <param index="0">
               <value>
@@ -396,7 +261,7 @@ Session ID: 6840beb1aa31d4d8c18e5aae48620b33
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUserGydytojas -->
-        <test-method status="PASS" signature="addUserGydytojas(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:sps.auto.testai.FR_1@273444fe]" name="addUserGydytojas" duration-ms="1205" started-at="2018-03-13T15:29:20Z" data-provider="Doctor" finished-at="2018-03-13T15:29:21Z">
+        <test-method status="PASS" signature="addUserGydytojas(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:sps.auto.testai.FR_1@353352b6]" name="addUserGydytojas" duration-ms="1242" started-at="2018-03-13T22:20:19Z" data-provider="Doctor" finished-at="2018-03-13T22:20:21Z">
           <params>
             <param index="0">
               <value>
@@ -427,7 +292,7 @@ Session ID: 6840beb1aa31d4d8c18e5aae48620b33
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUserGydytojas -->
-        <test-method status="PASS" signature="addUserPacientas(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:sps.auto.testai.FR_1@273444fe]" name="addUserPacientas" duration-ms="1437" started-at="2018-03-13T15:29:21Z" data-provider="Patient" finished-at="2018-03-13T15:29:23Z">
+        <test-method status="PASS" signature="addUserPacientas(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:sps.auto.testai.FR_1@353352b6]" name="addUserPacientas" duration-ms="1486" started-at="2018-03-13T22:20:21Z" data-provider="Patient" finished-at="2018-03-13T22:20:22Z">
           <params>
             <param index="0">
               <value>
@@ -463,7 +328,7 @@ Session ID: 6840beb1aa31d4d8c18e5aae48620b33
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUserPacientas -->
-        <test-method status="PASS" signature="addUserPacientas(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:sps.auto.testai.FR_1@273444fe]" name="addUserPacientas" duration-ms="1317" started-at="2018-03-13T15:29:23Z" data-provider="Patient" finished-at="2018-03-13T15:29:24Z">
+        <test-method status="PASS" signature="addUserPacientas(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:sps.auto.testai.FR_1@353352b6]" name="addUserPacientas" duration-ms="1316" started-at="2018-03-13T22:20:22Z" data-provider="Patient" finished-at="2018-03-13T22:20:23Z">
           <params>
             <param index="0">
               <value>
@@ -499,7 +364,7 @@ Session ID: 6840beb1aa31d4d8c18e5aae48620b33
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUserPacientas -->
-        <test-method status="PASS" signature="addUserVaistininkas(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:sps.auto.testai.FR_1@273444fe]" name="addUserVaistininkas" duration-ms="1293" started-at="2018-03-13T15:29:24Z" data-provider="Pharmacist" finished-at="2018-03-13T15:29:25Z">
+        <test-method status="PASS" signature="addUserVaistininkas(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:sps.auto.testai.FR_1@353352b6]" name="addUserVaistininkas" duration-ms="1340" started-at="2018-03-13T22:20:23Z" data-provider="Pharmacist" finished-at="2018-03-13T22:20:25Z">
           <params>
             <param index="0">
               <value>
@@ -535,7 +400,7 @@ Session ID: 6840beb1aa31d4d8c18e5aae48620b33
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUserVaistininkas -->
-        <test-method status="PASS" signature="addUserVaistininkas(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:sps.auto.testai.FR_1@273444fe]" name="addUserVaistininkas" duration-ms="1489" started-at="2018-03-13T15:29:25Z" data-provider="Pharmacist" finished-at="2018-03-13T15:29:27Z">
+        <test-method status="PASS" signature="addUserVaistininkas(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:sps.auto.testai.FR_1@353352b6]" name="addUserVaistininkas" duration-ms="1328" started-at="2018-03-13T22:20:25Z" data-provider="Pharmacist" finished-at="2018-03-13T22:20:26Z">
           <params>
             <param index="0">
               <value>
@@ -571,15 +436,379 @@ Session ID: 6840beb1aa31d4d8c18e5aae48620b33
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUserVaistininkas -->
-        <test-method status="PASS" signature="AssigningPatientToDoctor()[pri:6, instance:sps.auto.testai.FR_1@273444fe]" name="AssigningPatientToDoctor" duration-ms="1065" started-at="2018-03-13T15:29:27Z" finished-at="2018-03-13T15:29:28Z">
+        <test-method status="PASS" signature="AssigningPatientToDoctor()[pri:6, instance:sps.auto.testai.FR_1@353352b6]" name="AssigningPatientToDoctor" duration-ms="636" started-at="2018-03-13T22:20:26Z" finished-at="2018-03-13T22:20:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AssigningPatientToDoctor -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sps.auto.testai.FR_1@273444fe]" name="closeBrowser" is-config="true" duration-ms="694" started-at="2018-03-13T15:29:28Z" finished-at="2018-03-13T15:29:28Z">
+      </class> <!-- sps.auto.testai.FR_1 -->
+      <class name="sps.auto.testai.FR_13">
+        <test-method status="PASS" signature="changePassword(java.lang.String, java.lang.String, java.lang.String)[pri:11, instance:sps.auto.testai.FR_13@402c4085]" name="changePassword" duration-ms="2180" started-at="2018-03-13T22:20:35Z" data-provider="ChangePassword" finished-at="2018-03-13T22:20:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[adminjonas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passjonas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jonaschangepass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePassword -->
+        <test-method status="PASS" signature="changePassword(java.lang.String, java.lang.String, java.lang.String)[pri:11, instance:sps.auto.testai.FR_13@402c4085]" name="changePassword" duration-ms="1762" started-at="2018-03-13T22:20:37Z" data-provider="ChangePassword" finished-at="2018-03-13T22:20:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[doctorignas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[docignas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ignaschangepass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePassword -->
+        <test-method status="PASS" signature="CloseDriver()[pri:12, instance:sps.auto.testai.FR_13@402c4085]" name="CloseDriver" duration-ms="691" started-at="2018-03-13T22:20:39Z" finished-at="2018-03-13T22:20:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+      </class> <!-- sps.auto.testai.FR_13 -->
+    </test> <!-- Smoking -->
+    <test name="Regression" duration-ms="20637" started-at="2018-03-13T20:20:39Z" finished-at="2018-03-13T20:21:00Z">
+      <class name="sps.auto.testai.FR_4">
+        <test-method status="FAIL" signature="loginAsDoctor()[pri:9, instance:sps.auto.testai.FR_4@6be968ce]" name="loginAsDoctor" duration-ms="5036" started-at="2018-03-13T22:20:52Z" finished-at="2018-03-13T22:20:57Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='text']"}
+  (Session info: chrome=64.0.3282.186)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'MARGO-THINK', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\Margo\AppData\Local\Temp\scoped_dir9292_10018}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=64.0.3282.186, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: be4dedc8f5e42f7a4ec69779a67a7f3f
+*** Element info: {Using=xpath, value=//input[@type='text']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='text']"}
+  (Session info: chrome=64.0.3282.186)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'MARGO-THINK', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\Margo\AppData\Local\Temp\scoped_dir9292_10018}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=64.0.3282.186, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: be4dedc8f5e42f7a4ec69779a67a7f3f
+*** Element info: {Using=xpath, value=//input[@type='text']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+	at home.and.login.LoginPage.enterVardas(LoginPage.java:12)
+	at sps.auto.testai.FR_4.loginAsDoctor(FR_4.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsDoctor -->
+        <test-method status="PASS" signature="addPrescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:sps.auto.testai.FR_4@6be968ce]" name="addPrescription" duration-ms="1508" started-at="2018-03-13T22:20:57Z" data-provider="Prescription" finished-at="2018-03-13T22:20:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Paracetamolis]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mikrogramai]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Vartoti vakere]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[01/01/2019]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPrescription -->
+        <test-method status="PASS" signature="addPrescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:sps.auto.testai.FR_4@6be968ce]" name="addPrescription" duration-ms="1502" started-at="2018-03-13T22:20:59Z" data-provider="Prescription" finished-at="2018-03-13T22:21:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Citramonas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mikrogramai]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Vartoti prieš valgį]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[08/08/2018]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPrescription -->
+      </class> <!-- sps.auto.testai.FR_4 -->
+      <class name="sps.auto.testai.FR_3">
+        <test-method status="FAIL" signature="loginAsDoctor()[pri:7, instance:sps.auto.testai.FR_3@7188af83]" name="loginAsDoctor" duration-ms="10067" started-at="2018-03-13T22:20:39Z" finished-at="2018-03-13T22:20:49Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@type='text']' (tried for 2 second(s) with 500 MILLISECONDS interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //input[@type='text']' (tried for 2 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at sps.auto.testai.FR_3.loginAsDoctor(FR_3.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='text']"}
+  (Session info: chrome=64.0.3282.186)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'MARGO-THINK', ip: '192.168.1.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1), userDataDir=C:\Users\Margo\AppData\Local\Temp\scoped_dir10280_23123}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=64.0.3282.186, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 27a933af47734f08452c03c94037e0a6
+*** Element info: {Using=xpath, value=//input[@type='text']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsDoctor -->
+        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:sps.auto.testai.FR_3@7188af83]" name="addMedicalRecord" duration-ms="1220" started-at="2018-03-13T22:20:49Z" data-provider="MedicalRecord" finished-at="2018-03-13T22:20:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10 minučių]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[M44-M77]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Taip]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Nekartotinas]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Sloga]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMedicalRecord -->
+        <test-method status="PASS" signature="addMedicalRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:sps.auto.testai.FR_3@7188af83]" name="addMedicalRecord" duration-ms="1292" started-at="2018-03-13T22:20:51Z" data-provider="MedicalRecord" finished-at="2018-03-13T22:20:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[20 minučių]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[N77-N36]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Taip]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Nekartotinas]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Galvos skausmas]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMedicalRecord -->
+      </class> <!-- sps.auto.testai.FR_3 -->
+      <class name="sps.auto.testai.FR_1">
+        <test-method status="PASS" signature="setup()[pri:0, instance:sps.auto.testai.FR_1@353352b6]" name="setup" is-config="true" duration-ms="837" started-at="2018-03-13T22:20:10Z" finished-at="2018-03-13T22:20:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:sps.auto.testai.FR_13@402c4085]" name="setup" is-config="true" duration-ms="829" started-at="2018-03-13T22:20:11Z" finished-at="2018-03-13T22:20:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:sps.auto.testai.FR_3@7188af83]" name="setup" is-config="true" duration-ms="540" started-at="2018-03-13T22:20:11Z" finished-at="2018-03-13T22:20:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:sps.auto.testai.FR_4@6be968ce]" name="setup" is-config="true" duration-ms="595" started-at="2018-03-13T22:20:12Z" finished-at="2018-03-13T22:20:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sps.auto.testai.FR_1@353352b6]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2018-03-13T22:21:00Z" finished-at="2018-03-13T22:21:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sps.auto.testai.FR_4@6be968ce]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2018-03-13T22:21:00Z" finished-at="2018-03-13T22:21:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sps.auto.testai.FR_13@402c4085]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2018-03-13T22:21:00Z" finished-at="2018-03-13T22:21:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:sps.auto.testai.FR_3@7188af83]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2018-03-13T22:21:00Z" finished-at="2018-03-13T22:21:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- sps.auto.testai.FR_1 -->
-    </test> <!-- Smoking -->
+    </test> <!-- Regression -->
   </suite> <!-- TestNG suite -->
 </testng-results>

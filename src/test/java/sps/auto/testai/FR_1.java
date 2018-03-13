@@ -7,8 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import adding.user.input.forms.AddAdminPage;
@@ -27,18 +27,18 @@ import main.page.viewlists.ViewPatientList;
 * @since   2018-03-13
 */
 
-public class FR_1 {
+public class FR_1{
 	
 	protected static WebDriver driver = new ChromeDriver();
 
-	@BeforeClass
+	@BeforeSuite
 	public static void setup() {
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 		driver.get("http://localhost:8081");
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	}
 
-	@AfterClass
+	@AfterSuite
 	public static void closeBrowser() {
 		driver.quit();
 	}
